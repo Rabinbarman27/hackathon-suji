@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Study Planner</title>
+
+  <!-- CSS LINK (VERY IMPORTANT) -->
+  <link rel="stylesheet" href="./notes.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- MAIN NOTES AREA -->
+  <div class="notes-container">
+
+    <h1>Daily Study Planner</h1>
+    <p class="subtitle">Plan • Write • Review</p>
+
+    <label>Subject</label>
+    <input type="text" id="subject" placeholder="Eg: Java, DBMS">
+
+    <label>Today's Plan / Notes</label>
+    <textarea id="notes" placeholder="What will you study today?"></textarea>
+
+    <button onclick="saveNotes()">Save Notes</button>
+
+    <h2>Saved Plans</h2>
+    <div id="savedNotes"></div>
+
+  </div>
+
+  <!-- SIDE PANEL -->
+  <div class="side-panel">
+
+    <div class="box">
+      <h3>🕒 Time</h3>
+      <div id="clock" class="clock">00:00:00</div>
+    </div>
+
+    <div class="box">
+      <h3>📅 Calendar</h3>
+      <div id="calendar"></div>
+    </div>
+
+    <div class="box">
+      <h3>💡 Study Tip</h3>
+      <p>Study one subject deeply instead of many lightly.</p>
+    </div>
+
+    <button class="back" onclick="goBack()">⬅ Back</button>
+
+  </div>
+
+</div>
+
+<script src="./notes.js"></script>
+</body>
+</html>
