@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Static site deployment",
   "scripts": {
+    "start": "npx serve .",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
     "build": "mkdir -p dist && cp *.html *.css *.js dist/ && if [ -d \"site\" ]; then cp -r site dist/; fi"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
 }
