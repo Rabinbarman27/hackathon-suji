@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "Static site deployment",
   "scripts": {
-    "build": "mkdir -p dist && cp *.html *.css *.js dist/ && if [ -d \"site\" ]; then cp -r site dist/; fi"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   },
   "keywords": [],
   "author": "",
