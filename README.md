@@ -1,3 +1,37 @@
+# StudyHub (migrated to React + Vite)
+
+This repo is a migration of the original static site into a small React app bootstrapped with Vite.
+
+Quick commands
+
+Install dependencies:
+```bash
+npm install
+```
+
+Run dev server:
+```bash
+npm run dev
+```
+
+Build production:
+```bash
+npm run build
+```
+
+Preview production build locally:
+```bash
+npm run preview
+```
+
+Deployment
+
+- Vercel: the repo includes `vercel.json` configured to rewrite all routes to `index.html` for SPA routing. Set the build command to `npm run build` and the output directory to `dist` on Vercel.
+
+Notes
+
+- Local data (accounts, progress) is stored in `localStorage` for demo purposes.
+- Before committing again, avoid committing `node_modules` and `dist` (see `.gitignore`).
 # 🎓 StudyHub - Hackathon Suji
 
 Welcome to **StudyHub**, a smart, web-based study companion designed to help students manage their study sessions effectively using proven techniques like Pomodoro, Active Recall, and Spaced Repetition.
